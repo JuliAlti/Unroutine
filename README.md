@@ -7,10 +7,10 @@ This repository hosts the static support and privacy pages for the mobile app **
 ## Live Pages
 
 - **Support page:**  
-  [https://juliati.github.io/Unroutine/](https://juliati.github.io/Unroutine/)
+  [https://juliati.github.io/Unroutine/](https://julialti.github.io/Unroutine/)
 
 - **Privacy policy:**  
-  [https://juliati.github.io/Unroutine/privacy.html](https://juliati.github.io/Unroutine/privacy.html)
+  [https://juliati.github.io/Unroutine/privacy.html](https://julialti.github.io/Unroutine/privacy.html)
 
 ## Privacy Philosophy
 
