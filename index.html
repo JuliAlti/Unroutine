@@ -2,35 +2,75 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Unroutine – Support</title>
+  <title>Unroutine – Support & App Info</title>
+  <meta name="description" content="Support and information for the Unroutine iOS app. Daily challenges to disrupt your routine.">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="YOUR_FAVICON_URL_HERE.png" type="image/png"> <!-- Optional: Add a favicon -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
+
+  <header class="app-header">
+    <!-- Optional: App Icon -->
+    <!-- <img src="YOUR_APP_ICON_URL_HERE.png" alt="Unroutine App Icon" class="app-icon"> -->
     <h1>Unroutine</h1>
-    <p class="tagline">Weekly global challenges to gently disrupt your routine.</p>
+    <p class="tagline">Daily global challenges to gently disrupt your routine.</p>
+  </header>
 
-    <section>
-      <h2>About</h2>
-      <p><strong>Unroutine</strong> is a minimalist app that presents you with one global task every week. No account. No notifications. Just a nudge to do something different.</p>
+  <div class="container">
+    <section id="about">
+      <h2>About Unroutine</h2>
+      <p><strong>Unroutine</strong> is a minimalist iOS app designed to bring a spark of novelty to your everyday life. Each day, we release one global "Challenge of the Day" – a simple, often surprising task meant to nudge you out of autopilot.</p>
+      <p>There are no accounts, no tracking, and no pressure. Just a gentle invitation to do something different, observe your surroundings in a new way, or engage in a moment of playful curiosity. The goal is to cultivate awareness and make life a little less predictable.</p>
     </section>
 
-    <section>
-      <h2>Contact</h2>
-      <p>If you have questions, feedback or ideas, contact us at:</p>
-      <p><a href="mailto:unroutine.app@gmail.com">unroutine.app@gmail.com</a></p>
+    <section id="contact">
+      <h2>Get in Touch</h2>
+      <p>Have questions, feedback, or a brilliant challenge idea? We'd love to hear from you!</p>
+      <p>
+        Please reach out via email:
+        <a href="mailto:unroutine.app@gmail.com">unroutine.app@gmail.com</a>
+      </p>
+      <!--
+      <p>
+        <a href="mailto:unroutine.app@gmail.com" class="button-link">Email Support</a>
+      </p>
+      -->
     </section>
 
-    <section>
-      <h2>Privacy</h2>
-      <p>We collect nothing. Your data stays on your device.</p>
-      <p><a href="privacy.html">Read full privacy policy</a></p>
+    <section id="privacy">
+      <h2>Your Privacy Matters</h2>
+      <p>We are committed to your privacy. Unroutine collects absolutely no personal data. All your interactions, like marking a challenge as "done", stay completely on your device.</p>
+      <p>For full details, please read our complete <a href="privacy.html">Privacy Policy</a>.</p>
     </section>
 
-    <footer>
-      <p>&copy; 2025 Unroutine</p>
-    </footer>
+    <!-- Optional: FAQ Section -->
+    <!--
+    <section id="faq">
+      <h2>Frequently Asked Questions</h2>
+      <dl>
+        <dt><strong>When is the new challenge released?</strong></dt>
+        <dd>A new Challenge of the Day is released globally every day at midnight (UTC).</dd>
+        <br>
+        <dt><strong>Do I need an internet connection?</strong></dt>
+        <dd>You'll need an internet connection to fetch the new daily challenge. Once fetched, you can view it offline. The archive also requires an internet connection to load.</dd>
+        <br>
+        <dt><strong>Is the app available on Android?</strong></dt>
+        <dd>Currently, Unroutine is only available for iOS. We may consider other platforms in the future based on interest!</dd>
+      </dl>
+    </section>
+    -->
+
   </div>
+
+  <footer>
+    <p>© <span id="currentYear"></span> Unroutine. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Simple script to update the year in the footer
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+  </script>
+
 </body>
 </html>
