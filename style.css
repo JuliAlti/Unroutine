@@ -13,18 +13,7 @@
   --box-shadow: 0 3px 8px rgba(74, 68, 61, 0.07); /* Softer shadow with brown tint */
 
   /* Fonts */
-  /*
-    For body text, we use a system font stack. This ensures the text renders
-    using the native font of the user's operating system, which is optimized
-    for readability and performance (no extra downloads).
-  */
   --body-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-
-  /*
-    For headers, we use "Georgia" as the primary choice. It's a classic,
-    elegant serif font that's widely available (web safe).
-    "Times New Roman" and the generic "serif" are fallbacks.
-  */
   --header-font-family: "Georgia", "Times New Roman", Times, serif;
 }
 
@@ -45,8 +34,8 @@ body {
   flex-direction: column;
   align-items: center;
   min-height: 100vh;
-  -webkit-font-smoothing: antialiased; /* Improves font rendering on WebKit/Blink */
-  -moz-osx-font-smoothing: grayscale; /* Improves font rendering on Firefox */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .app-header {
@@ -55,10 +44,10 @@ body {
   margin-top: 30px;
 }
 
-.app-header img.app-icon {
+.app-header img.app-icon { /* Styling für das App-Icon im Header der Webseiten */
   width: 80px;
   height: 80px;
-  border-radius: 18px;
+  border-radius: 18px; /* Oder 22% wenn dein Icon quadratisch ist und du den iOS Squircle-Look möchtest */
   margin-bottom: 20px;
   box-shadow: var(--box-shadow);
 }
@@ -66,10 +55,10 @@ body {
 .app-header h1 {
   font-family: var(--header-font-family);
   font-size: 2.6rem;
-  font-weight: normal; /* Georgia often looks best at normal weight for large titles */
+  font-weight: normal;
   color: var(--primary-text-color);
   margin-bottom: 8px;
-  letter-spacing: 0.5px; /* Slight letter spacing can improve readability for some serifs */
+  letter-spacing: 0.5px;
 }
 
 .app-header .tagline {
@@ -116,7 +105,7 @@ section:last-of-type {
 h2 {
   font-family: var(--header-font-family);
   font-size: 1.6rem;
-  font-weight: normal; /* Consistent with h1 styling for Georgia */
+  font-weight: normal;
   color: var(--primary-text-color);
   margin-bottom: 15px;
   padding-bottom: 10px;
@@ -138,8 +127,6 @@ li {
 }
 
 strong {
-  /* Body font uses system stack, so 600 is a good relative bold.
-     If you wanted Georgia for strong tags too, you'd set font-family here. */
   font-weight: 600;
   color: var(--primary-text-color);
 }
@@ -147,7 +134,7 @@ strong {
 a {
   color: var(--accent-color);
   text-decoration: none;
-  font-weight: 500; /* Make links slightly bolder within the body font context */
+  font-weight: 500;
   transition: color 0.2s ease-in-out;
 }
 
@@ -164,7 +151,7 @@ a:hover, a:focus {
   border-radius: 6px;
   text-decoration: none;
   font-weight: 500;
-  font-family: var(--body-font-family); /* Explicitly use body font for buttons */
+  font-family: var(--body-font-family);
   transition: background-color 0.2s ease-in-out;
   box-shadow: 0 2px 4px rgba(0,0,0,0.05);
 }
