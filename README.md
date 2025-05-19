@@ -17,7 +17,7 @@
   This repository hosts the static support and privacy information pages for the iOS app <strong>Unroutine</strong>.
 </p>
 
-## <p align="center">✨ About Unroutine ✨</p>
+## <p align="center">About Unroutine</p>
 
 <p align="center">
   Unroutine is a minimalist iOS app designed to gently disrupt your daily routine. Each day, a new, surprising "Challenge of the Day" is published globally. The goal? To nudge you towards new experiences, moments of reflection, or a bit of playful movement – all without pressure or an end-goal, simply to embrace life a little more consciously.
@@ -31,22 +31,22 @@
 <table width="100%">
   <tr>
     <td width="50%" valign="top">
-      <h3 align="center">🚀 Live Pages</h3>
+      <h3 align="center">Live Pages</h3>
       <ul style="list-style-type: none; padding-left: 0; text-align: center;">
         <li style="margin-bottom: 10px;">
           <a href="https://julialti.github.io/Unroutine/" style="text-decoration: none; color: #0366d6; font-weight: bold;">
-            🔗 Support & App Info
+            Support & App Info
           </a>
         </li>
         <li>
           <a href="https://julialti.github.io/Unroutine/privacy.html" style="text-decoration: none; color: #0366d6; font-weight: bold;">
-            🛡️ Privacy Policy
+            Privacy Policy
           </a>
         </li>
       </ul>
     </td>
     <td width="50%" valign="top">
-      <h3 align="center">🛡️ Our Privacy Promise</h3>
+      <h3 align="center">Our Privacy Promise</h3>
       <p align="center" style="padding: 0 15px;">
         Unroutine is built with your privacy at its core. We do <strong>not</strong> collect, store, or transmit any personal data. All activity, including which challenges you've marked as "done", remains entirely local to your device.
       </p>
@@ -59,14 +59,14 @@
 
 <br>
 
-## <p align="center">📂 Repository Structure</p>
+## <p align="center">Repository Structure</p>
 <p align="center">The simple structure of this site:</p>
 
 <div style="background-color: #f6f8fa; border: 1px solid #e1e4e8; border-radius: 6px; padding: 15px; margin: 15px auto; max-width: 400px;">
   <ul style="list-style-type: none; padding-left: 0;">
-    <li><code>📄 index.html</code> – App information, contact, and support details.</li>
-    <li><code>📄 privacy.html</code> – Our GDPR-compliant privacy policy.</li>
-    <li><code>🎨 style.css</code> – Minimal, responsive styling for the pages.</li>
+    <li><code>index.html</code> – App information, contact, and support details.</li>
+    <li><code>privacy.html</code> – Our GDPR-compliant privacy policy.</li>
+    <li><code>style.css</code> – Minimal, responsive styling for the pages.</li>
   </ul>
 </div>
 
