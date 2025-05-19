@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="YOUR_APP_ICON_URL_HERE" alt="Unroutine App Icon" width="120" height="120" style="border-radius: 20%; margin-bottom: 15px;">
+  <img src="https://raw.githubusercontent.com/julialti/Unroutine/main/assets/icon.png" alt="Unroutine App Icon" width="120" height="120" style="border-radius: 20%; margin-bottom: 15px;">
   <h1>Unroutine – Support & Privacy</h1>
   <p>
     <strong>Minimalist Daily Challenges to Spark Your Curiosity</strong>
