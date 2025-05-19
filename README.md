@@ -5,7 +5,7 @@
     <strong>Minimalist Daily Challenges to Spark Your Curiosity</strong>
   </p>
   <p>
-    <a href="YOUR_APP_STORE_LINK_HERE_WHEN_READY">
+    <a href="COMING SOON">
       <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store" height="40">
     </a>
   </p>
