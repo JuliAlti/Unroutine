@@ -77,5 +77,5 @@
 </p>
 <br>
 <p align="center">
-  <a href="YOUR_CONTACT_EMAIL_LINK_OR_OTHER_CONTACT_METHOD">✉️ Get in Touch</a>
+  <a href="mailto:unroutine.app@gmail.com">unroutine.app@gmail.com</a>
 </p>
