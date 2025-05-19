@@ -1,57 +1,185 @@
-/* Reset */
+/* style.css */
+
+/* CSS Variables for easier themeing */
+:root {
+  --background-color: #f8f9fa; /* Light grey background */
+  --card-background-color: #ffffff; /* White card */
+  --primary-text-color: #212529; /* Dark grey for text */
+  --secondary-text-color: #6c757d; /* Lighter grey for secondary text */
+  --accent-color: #007bff; /* A nice blue for links and accents */
+  --accent-hover-color: #0056b3;
+  --border-color: #e9ecef; /* Light border for cards/sections */
+  --border-radius: 12px;
+  --box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+/* Basic Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Base */
 body {
-  font-family: system-ui, -apple-system, sans-serif;
-  background-color: #f9f9f9;
-  color: #222;
-  line-height: 1.6;
+  font-family: var(--font-family);
+  background-color: var(--background-color);
+  color: var(--primary-text-color);
+  line-height: 1.7; /* Increased for better readability */
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh; /* Ensure footer can be at the bottom */
+}
+
+.app-header {
+  text-align: center;
+  margin-bottom: 40px;
+  margin-top: 20px;
+}
+
+.app-header img.app-icon { /* Style for an optional app icon */
+  width: 80px;
+  height: 80px;
+  border-radius: 16px; /* Rounded corners for app icon */
+  margin-bottom: 15px;
+  box-shadow: var(--box-shadow);
+}
+
+.app-header h1 {
+  font-size: 2.8rem; /* Larger app title */
+  font-weight: 600;
+  color: var(--primary-text-color);
+  margin-bottom: 5px;
+}
+
+.app-header .tagline {
+  font-size: 1.1rem;
+  color: var(--secondary-text-color);
+  font-weight: 300;
 }
 
 .container {
-  max-width: 700px;
-  margin: 0 auto;
-  padding: 2rem;
-  background: white;
-  border-radius: 12px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  max-width: 720px; /* Slightly wider for better content flow */
+  width: 100%;
+  margin: 0 auto 40px auto; /* Bottom margin for footer spacing */
+  padding: 30px 40px; /* More padding inside the card */
+  background: var(--card-background-color);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  border: 1px solid var(--border-color);
 }
 
-h1 {
+h1.page-title { /* For titles within the container, like "Privacy Policy" */
   font-size: 2.2rem;
-  margin-bottom: 0.3rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: var(--primary-text-color);
+  text-align: center;
 }
 
-.tagline {
+.container .tagline { /* Tagline inside the container */
+  font-size: 1rem;
   font-style: italic;
-  color: #555;
-  margin-bottom: 2rem;
+  color: var(--secondary-text-color);
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+section {
+  margin-bottom: 35px; /* Increased spacing between sections */
+}
+
+section:last-of-type {
+  margin-bottom: 20px;
 }
 
 h2 {
-  font-size: 1.4rem;
-  margin-top: 2rem;
-  margin-bottom: 0.5rem;
+  font-size: 1.5rem; /* Slightly larger section titles */
+  font-weight: 500;
+  color: var(--primary-text-color);
+  margin-bottom: 12px; /* More space after h2 */
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--border-color); /* Subtle separator */
+}
+
+p, ul {
+  margin-bottom: 15px;
+  color: var(--secondary-text-color); /* Make paragraphs slightly lighter */
+  font-size: 1rem;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+strong {
+  color: var(--primary-text-color);
+  font-weight: 600;
 }
 
 a {
-  color: #0066cc;
+  color: var(--accent-color);
   text-decoration: none;
+  font-weight: 500; /* Make links slightly bolder */
 }
 
-a:hover {
+a:hover, a:focus {
+  color: var(--accent-hover-color);
   text-decoration: underline;
 }
 
+.button-link { /* For a more button-like link */
+  display: inline-block;
+  background-color: var(--accent-color);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.button-link:hover, .button-link:focus {
+  background-color: var(--accent-hover-color);
+  color: white;
+  text-decoration: none;
+}
+
 footer {
-  margin-top: 3rem;
-  font-size: 0.9rem;
+  margin-top: auto; /* Push footer to bottom if content is short */
+  padding: 20px 0;
+  width: 100%;
   text-align: center;
-  color: #888;
+  font-size: 0.9rem;
+  color: var(--secondary-text-color);
+  border-top: 1px solid var(--border-color);
+  background-color: var(--background-color); /* Match body background */
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
+  .app-header h1 {
+    font-size: 2.2rem;
+  }
+  .app-header .tagline {
+    font-size: 1rem;
+  }
+  .container {
+    padding: 20px;
+  }
+  h1.page-title {
+    font-size: 1.8rem;
+  }
+  h2 {
+    font-size: 1.3rem;
+  }
 }
