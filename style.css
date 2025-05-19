@@ -1,17 +1,31 @@
 /* style.css */
 
-/* CSS Variables for easier themeing */
+/* CSS Variables for a Calming Beige/Brown/Green Theme */
 :root {
-  --background-color: #f8f9fa; /* Light grey background */
-  --card-background-color: #ffffff; /* White card */
-  --primary-text-color: #212529; /* Dark grey for text */
-  --secondary-text-color: #6c757d; /* Lighter grey for secondary text */
-  --accent-color: #007bff; /* A nice blue for links and accents */
-  --accent-hover-color: #0056b3;
-  --border-color: #e9ecef; /* Light border for cards/sections */
-  --border-radius: 12px;
-  --box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-  --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --background-color: #f5f3ef; /* Very light, warm beige */
+  --card-background-color: #ffffff; /* Clean white for contrast */
+  --primary-text-color: #4a443d; /* Deep, soft brown for main text */
+  --secondary-text-color: #7d746b; /* Lighter, warm grey-brown */
+  --accent-color: #6b8e23; /* Olive green for links/accents */
+  --accent-hover-color: #55731a; /* Darker olive green for hover */
+  --border-color: #e0ddd7; /* Soft beige border */
+  --border-radius: 10px; /* Slightly softer radius */
+  --box-shadow: 0 3px 8px rgba(74, 68, 61, 0.07); /* Softer shadow with brown tint */
+
+  /* Fonts */
+  /*
+    For body text, we use a system font stack. This ensures the text renders
+    using the native font of the user's operating system, which is optimized
+    for readability and performance (no extra downloads).
+  */
+  --body-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+  /*
+    For headers, we use "Georgia" as the primary choice. It's a classic,
+    elegant serif font that's widely available (web safe).
+    "Times New Roman" and the generic "serif" are fallbacks.
+  */
+  --header-font-family: "Georgia", "Times New Roman", Times, serif;
 }
 
 /* Basic Reset */
@@ -22,36 +36,40 @@
 }
 
 body {
-  font-family: var(--font-family);
+  font-family: var(--body-font-family);
   background-color: var(--background-color);
   color: var(--primary-text-color);
-  line-height: 1.7; /* Increased for better readability */
+  line-height: 1.75;
   padding: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: 100vh; /* Ensure footer can be at the bottom */
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased; /* Improves font rendering on WebKit/Blink */
+  -moz-osx-font-smoothing: grayscale; /* Improves font rendering on Firefox */
 }
 
 .app-header {
   text-align: center;
   margin-bottom: 40px;
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
-.app-header img.app-icon { /* Style for an optional app icon */
+.app-header img.app-icon {
   width: 80px;
   height: 80px;
-  border-radius: 16px; /* Rounded corners for app icon */
-  margin-bottom: 15px;
+  border-radius: 18px;
+  margin-bottom: 20px;
   box-shadow: var(--box-shadow);
 }
 
 .app-header h1 {
-  font-size: 2.8rem; /* Larger app title */
-  font-weight: 600;
+  font-family: var(--header-font-family);
+  font-size: 2.6rem;
+  font-weight: normal; /* Georgia often looks best at normal weight for large titles */
   color: var(--primary-text-color);
-  margin-bottom: 5px;
+  margin-bottom: 8px;
+  letter-spacing: 0.5px; /* Slight letter spacing can improve readability for some serifs */
 }
 
 .app-header .tagline {
@@ -61,72 +79,76 @@ body {
 }
 
 .container {
-  max-width: 720px; /* Slightly wider for better content flow */
+  max-width: 700px;
   width: 100%;
-  margin: 0 auto 40px auto; /* Bottom margin for footer spacing */
-  padding: 30px 40px; /* More padding inside the card */
+  margin: 0 auto 40px auto;
+  padding: 35px 45px;
   background: var(--card-background-color);
   border-radius: var(--border-radius);
   box-shadow: var(--box-shadow);
   border: 1px solid var(--border-color);
 }
 
-h1.page-title { /* For titles within the container, like "Privacy Policy" */
-  font-size: 2.2rem;
-  font-weight: 600;
-  margin-bottom: 10px;
+h1.page-title {
+  font-family: var(--header-font-family);
+  font-size: 2rem;
+  font-weight: normal;
+  margin-bottom: 15px;
   color: var(--primary-text-color);
   text-align: center;
 }
 
-.container .tagline { /* Tagline inside the container */
+.container .tagline {
   font-size: 1rem;
-  font-style: italic;
   color: var(--secondary-text-color);
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 35px;
 }
 
 section {
-  margin-bottom: 35px; /* Increased spacing between sections */
+  margin-bottom: 30px;
 }
 
 section:last-of-type {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 h2 {
-  font-size: 1.5rem; /* Slightly larger section titles */
-  font-weight: 500;
+  font-family: var(--header-font-family);
+  font-size: 1.6rem;
+  font-weight: normal; /* Consistent with h1 styling for Georgia */
   color: var(--primary-text-color);
-  margin-bottom: 12px; /* More space after h2 */
-  padding-bottom: 8px;
-  border-bottom: 1px solid var(--border-color); /* Subtle separator */
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--border-color);
 }
 
 p, ul {
-  margin-bottom: 15px;
-  color: var(--secondary-text-color); /* Make paragraphs slightly lighter */
-  font-size: 1rem;
+  margin-bottom: 18px;
+  color: var(--primary-text-color);
+  font-size: 1.05rem;
 }
 
 ul {
-  padding-left: 20px;
+  padding-left: 25px;
 }
 
 li {
-  margin-bottom: 8px;
+  margin-bottom: 10px;
 }
 
 strong {
-  color: var(--primary-text-color);
+  /* Body font uses system stack, so 600 is a good relative bold.
+     If you wanted Georgia for strong tags too, you'd set font-family here. */
   font-weight: 600;
+  color: var(--primary-text-color);
 }
 
 a {
   color: var(--accent-color);
   text-decoration: none;
-  font-weight: 500; /* Make links slightly bolder */
+  font-weight: 500; /* Make links slightly bolder within the body font context */
+  transition: color 0.2s ease-in-out;
 }
 
 a:hover, a:focus {
@@ -134,52 +156,57 @@ a:hover, a:focus {
   text-decoration: underline;
 }
 
-.button-link { /* For a more button-like link */
+.button-link {
   display: inline-block;
   background-color: var(--accent-color);
-  color: white;
-  padding: 10px 20px;
-  border-radius: 8px;
+  color: white !important;
+  padding: 12px 22px;
+  border-radius: 6px;
   text-decoration: none;
   font-weight: 500;
+  font-family: var(--body-font-family); /* Explicitly use body font for buttons */
   transition: background-color 0.2s ease-in-out;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
 }
 
 .button-link:hover, .button-link:focus {
   background-color: var(--accent-hover-color);
-  color: white;
+  color: white !important;
   text-decoration: none;
 }
 
 footer {
-  margin-top: auto; /* Push footer to bottom if content is short */
-  padding: 20px 0;
+  margin-top: auto;
+  padding: 25px 0;
   width: 100%;
   text-align: center;
-  font-size: 0.9rem;
+  font-size: 0.9em;
   color: var(--secondary-text-color);
   border-top: 1px solid var(--border-color);
-  background-color: var(--background-color); /* Match body background */
+  background-color: var(--background-color);
 }
 
 /* Responsive adjustments */
 @media (max-width: 600px) {
   body {
-    padding: 10px;
+    padding: 15px;
   }
   .app-header h1 {
-    font-size: 2.2rem;
+    font-size: 2.1rem;
   }
   .app-header .tagline {
     font-size: 1rem;
   }
   .container {
-    padding: 20px;
+    padding: 25px 20px;
   }
   h1.page-title {
-    font-size: 1.8rem;
+    font-size: 1.7rem;
   }
   h2 {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
+  }
+  p, ul {
+    font-size: 1rem;
   }
 }
