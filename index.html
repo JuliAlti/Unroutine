@@ -5,13 +5,12 @@
   <title>Unroutine – Support & App Info</title>
   <meta name="description" content="Support and information for the Unroutine iOS app. Daily challenges to disrupt your routine.">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="YOUR_FAVICON_URL_HERE.png" type="image/png"> <!-- Optional: Add a favicon -->
+  <link rel="icon" href="YOUR_FAVICON_URL_HERE.png" type="image/png">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <header class="app-header">
-    <!-- Optional: App Icon -->
     <!-- <img src="YOUR_APP_ICON_URL_HERE.png" alt="Unroutine App Icon" class="app-icon"> -->
     <h1>Unroutine</h1>
     <p class="tagline">Daily global challenges to gently disrupt your routine.</p>
@@ -31,11 +30,6 @@
         Please reach out via email:
         <a href="mailto:unroutine.app@gmail.com">unroutine.app@gmail.com</a>
       </p>
-      <!--
-      <p>
-        <a href="mailto:unroutine.app@gmail.com" class="button-link">Email Support</a>
-      </p>
-      -->
     </section>
 
     <section id="privacy">
@@ -44,31 +38,40 @@
       <p>For full details, please read our complete <a href="privacy.html">Privacy Policy</a>.</p>
     </section>
 
+    <!-- NEUER ABSCHNITT FÜR "BUY ME A COFFEE" -->
+    <section id="support-us">
+      <h2>Support Unroutine</h2>
+      <p>If you enjoy Unroutine and would like to support its continued development and the creation of new daily challenges, you can treat me to a virtual coffee. Every little bit helps and is greatly appreciated!</p>
+      <p style="text-align: center; margin-top: 20px;">
+        <a href="https://buymeacoffee.com/julialti" target="_blank" rel="noopener noreferrer" class="button-link" style="background-color: #FFDD00; color: #000000 !important; border: 1px solid #E3C000;">
+          ☕ Buy Me a Coffee
+        </a>
+      </p>
+      <p style="text-align: center; font-size: 0.9em; color: var(--secondary-text-color);">
+        (This will take you to my secure "Buy Me a Coffee" page.)
+      </p>
+    </section>
+    <!-- ENDE NEUER ABSCHNITT -->
+
     <!-- Optional: FAQ Section -->
     <!--
     <section id="faq">
       <h2>Frequently Asked Questions</h2>
-      <dl>
-        <dt><strong>When is the new challenge released?</strong></dt>
-        <dd>A new Challenge of the Day is released globally every day at midnight (UTC).</dd>
-        <br>
-        <dt><strong>Do I need an internet connection?</strong></dt>
-        <dd>You'll need an internet connection to fetch the new daily challenge. Once fetched, you can view it offline. The archive also requires an internet connection to load.</dd>
-        <br>
-        <dt><strong>Is the app available on Android?</strong></dt>
-        <dd>Currently, Unroutine is only available for iOS. We may consider other platforms in the future based on interest!</dd>
-      </dl>
+      ...
     </section>
     -->
 
   </div>
 
   <footer>
-    <p>© <span id="currentYear"></span> Unroutine. All rights reserved.</p>
+    <p>
+        © <span id="currentYear"></span> Unroutine. All rights reserved.
+        <!-- Optional: Kleiner Link im Footer -->
+        <!-- <br>Enjoying Unroutine? <a href="https://buymeacoffee.com/julialti" target="_blank" rel="noopener noreferrer" style="font-weight: normal;">Support with a coffee ☕</a> -->
+    </p>
   </footer>
 
   <script>
-    // Simple script to update the year in the footer
     document.getElementById('currentYear').textContent = new Date().getFullYear();
   </script>
 
