@@ -5,22 +5,21 @@
   <title>Privacy Policy – Unroutine</title>
   <meta name="description" content="Privacy Policy for the Unroutine iOS app. We respect your data - because we don't collect it.">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="YOUR_FAVICON_URL_HERE.png" type="image/png"> <!-- Optional: Add a favicon -->
+  <link rel="icon" href="assets/favicon.png" type="image/png"> <!-- Erstelle ein favicon.png und lege es in /assets ab -->
+  <link rel="apple-touch-icon" href="assets/iconMain.png"> <!-- Für Lesezeichen auf iOS Homescreens -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <header class="app-header">
-    <!-- Optional: App Icon -->
-    <!-- <img src="YOUR_APP_ICON_URL_HERE.png" alt="Unroutine App Icon" class="app-icon"> -->
+    <img src="assets/iconMain.png" alt="Unroutine App Icon" class="app-icon">
     <h1>Unroutine</h1>
-    <!-- Sub-title specific to this page -->
   </header>
 
   <div class="container">
     <h1 class="page-title">Privacy Policy</h1>
     <p class="tagline">Your data stays yours. Always. That's our promise.</p>
-    <p style="text-align: center; font-size: 0.9em; color: var(--secondary-text-color); margin-bottom: 30px;">Last Updated: <span id="lastUpdatedDate">May 19, 2025</span></p> <!-- UPDATE THIS DATE MANUALLY -->
+    <p style="text-align: center; font-size: 0.9em; color: var(--secondary-text-color); margin-bottom: 30px;">Last Updated: May 17, 2024</p> <!-- UPDATE THIS DATE MANUALLY WHEN POLICY CHANGES -->
 
 
     <section>
@@ -73,13 +72,15 @@
   </div>
 
   <footer>
-    <p>© <span id="currentYear"></span> Unroutine. All rights reserved. | <a href="index.html">Back to Support</a></p>
+    <p>
+        © <span id="currentYear"></span> Unroutine. All rights reserved. 
+        | <a href="index.html">Support</a>
+        | <a href="https://buymeacoffee.com/julialti" target="_blank" rel="noopener noreferrer" style="font-weight: normal; color: var(--accent-color);">Support with a coffee ☕</a>
+    </p>
   </footer>
 
   <script>
     document.getElementById('currentYear').textContent = new Date().getFullYear();
-    // Manually set or dynamically fetch the last updated date if needed. For static, just update the span content.
-    // document.getElementById('lastUpdatedDate').textContent = "Your Date Here";
   </script>
 
 </body>
