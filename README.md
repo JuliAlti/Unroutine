@@ -38,7 +38,7 @@
       <ul style="list-style-type: none; padding-left: 0; text-align: center;">
         <li style="margin-bottom: 10px;">
           <a href="https://julialti.github.io/Unroutine/" style="text-decoration: none; color: #0366d6; font-weight: bold;">
-            🔗 Support & App Info
+            Support & App Info
           </a>
         </li>
         <li>
