@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Unroutine – Support & App Info</title>
+  <meta name="description" content="Support and information for the Unroutine iOS app. Daily challenges to disrupt your routine.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="assets/iconMain.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="app-header">
+    <a href="index.html" style="text-decoration: none; color: inherit;">
+      <img src="assets/iconMain.png" alt="Unroutine App Icon" class="app-icon">
+      <h1>Unroutine</h1>
+    </a>
+    <p class="tagline">Daily global challenges to gently disrupt your routine.</p>
+  </header>
+
+  <div class="container">
+    <section id="about">
+      <h2>About Unroutine</h2>
+      <p><strong>Unroutine</strong> is a minimalist iOS app designed to bring a spark of novelty to your everyday life. Each day, we release one global "Challenge of the Day" – a simple, often surprising task meant to nudge you out of autopilot.</p>
+      <p>There are no accounts, no tracking, and no pressure. Just a gentle invitation to do something different, observe your surroundings in a new way, or engage in a moment of playful curiosity. The goal is to cultivate awareness and make life a little less predictable.</p>
+    </section>
+
+    <section id="contact">
+      <h2>Get in Touch</h2>
+      <p>Have questions, feedback, or a brilliant challenge idea? We'd love to hear from you!</p>
+      <p>
+        Please reach out via email:
+        <a href="mailto:unroutine.app@gmail.com">unroutine.app@gmail.com</a>
+      </p>
+    </section>
+
+    <section id="privacy-link"> <!-- Geänderte ID, um Kollision mit privacy.html zu vermeiden, falls relevant -->
+      <h2>Your Privacy Matters</h2>
+      <p>We are committed to your privacy. Unroutine collects absolutely no personal data. All your interactions, like marking a challenge as "done", stay completely on your device.</p>
+      <p>For full details, please read our complete <a href="privacy.html">Privacy Policy</a>.</p>
+    </section>
+
+    <section id="support-us">
+      <h2>Support Unroutine</h2>
+      <p>If you enjoy Unroutine and would like to support its continued development and the creation of new daily challenges, you can treat me to a virtual coffee. Every little bit helps and is greatly appreciated!</p>
+      <p style="text-align: center; margin-top: 20px;">
+        <a href="https://buymeacoffee.com/julialti" target="_blank" rel="noopener noreferrer" class="button-link" style="background-color: #FFDD00; color: #000000 !important; border: 1px solid #E3C000;">
+          ☕ Buy Me a Coffee
+        </a>
+      </p>
+      <p style="text-align: center; font-size: 0.9em; color: var(--secondary-text-color);">
+        (This will take you to my secure "Buy Me a Coffee" page.)
+      </p>
+    </section>
+  </div>
+
+  <footer> <!-- Standard-Footer, kein main-footer hier -->
+    <p>
+      <a href="index.html">Home</a>  | 
+      <a href="privacy.html">Privacy Policy</a>  | 
+      <a href="imprint.html">Legal Notice / Imprint</a>
+      <br>
+      © <span id="currentYear"></span> Unroutine. All rights reserved.
+      | <a href="https://buymeacoffee.com/julialti" target="_blank" rel="noopener noreferrer" style="font-weight: normal; color: var(--accent-color);">Support with a coffee ☕</a>
+    </p>
+  </footer>
+
+  <script>
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
