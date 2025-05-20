@@ -5,21 +5,24 @@
   <title>Privacy Policy – Unroutine</title>
   <meta name="description" content="Privacy Policy for the Unroutine iOS app. We respect your data - because we don't collect it.">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="assets/favicon.ico" type="image/png"> <!-- Erstelle ein favicon.ico und lege es in /assets ab -->
-  <link rel="apple-touch-icon" href="assets/iconMain.png"> <!-- Für Lesezeichen auf iOS Homescreens -->
+  <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="assets/iconMain.png">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <header class="app-header">
-    <img src="assets/iconMain.png" alt="Unroutine App Icon" class="app-icon">
-    <h1>Unroutine</h1>
+    <a href="index.html" style="text-decoration: none; color: inherit;">
+      <img src="assets/iconMain.png" alt="Unroutine App Icon" class="app-icon">
+      <h1>Unroutine</h1>
+    </a>
+    <!-- Tagline hier optional, kann auch weggelassen werden für mehr Fokus -->
   </header>
 
   <div class="container">
     <h1 class="page-title">Privacy Policy</h1>
     <p class="tagline">Your data stays yours. Always. That's our promise.</p>
-    <p style="text-align: center; font-size: 0.9em; color: var(--secondary-text-color); margin-bottom: 30px;">Last Updated: May 19, 2025</p> <!-- UPDATE THIS DATE MANUALLY WHEN POLICY CHANGES -->
+    <p style="text-align: center; font-size: 0.9em; color: var(--secondary-text-color); margin-bottom: 30px;">Last Updated: May 19, 2024</p> <!-- DATUM ANPASSEN -->
 
 
     <section>
@@ -33,23 +36,28 @@
       <ul>
         <li><strong>Challenge Completion Status:</strong> When you mark a challenge as "done" within the App, this information is stored <strong>solely on your local device</strong>. It is not sent to us or any third party.</li>
         <li><strong>Haptic Feedback Preference:</strong> Your preference for enabling or disabling haptic feedback is stored <strong>solely on your local device</strong>.</li>
+        <li><strong>Favorites & Ratings (Local):</strong> If you use features to mark challenges as favorites or rate them, this data is also stored <strong>solely on your local device</strong>.</li>
         <li><strong>No Analytics:</strong> The App does not include any third-party analytics tools or SDKs to track your behavior or usage patterns.</li>
       </ul>
     </section>
 
     <section>
       <h2>Data Storage & Security</h2>
-      <p>All data related to your use of the App (such as the "done" status of challenges or settings preferences) is stored locally on your device using standard iOS data storage mechanisms. We do not have access to this data. The security of this local data is handled by the security features of your iOS device and operating system.</p>
+      <p>All data related to your use of the App (such as the "done" status of challenges, favorites, local ratings, or settings preferences) is stored locally on your device using standard iOS data storage mechanisms. We do not have access to this data. The security of this local data is handled by the security features of your iOS device and operating system.</p>
     </section>
     
     <section>
       <h2>Firebase Firestore (Challenge Data)</h2>
       <p>The App connects to Google's Firebase Firestore service to download the daily challenges. This connection is made to retrieve publicly available challenge content (title, description, bonus, start date). This process does not involve the transmission of any of your Personal Data to Firebase or to us. Firebase may collect anonymous, aggregated data related to service usage as per their own <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">privacy policy</a>, but this is not linked to you as an individual Unroutine user.</p>
+      <!-- IF YOU IMPLEMENT GLOBAL ANONYMOUS RATINGS LATER, ADD A SECTION HERE: -->
+      <!--
+      <p><strong>Global Anonymous Ratings:</strong> If you choose to submit a rating for a challenge, this rating (e.g., 1-5 stars) along with the challenge identifier is sent anonymously to our server (e.g., via Firebase Cloud Functions). This data is aggregated with other anonymous ratings to calculate an average rating for challenges, which may be displayed within the App. No personally identifiable information or device identifiers are transmitted or stored with these ratings.</p>
+      -->
     </section>
 
     <section>
       <h2>Third-Party Services</h2>
-      <p>Other than Firebase Firestore for challenge content delivery (as described above), Unroutine does not integrate with or use any other third-party services that would involve sharing your data.</p>
+      <p>Other than Firebase Firestore for challenge content delivery (and potentially for processing anonymous global ratings as described above), Unroutine does not integrate with or use any other third-party services that would involve sharing your data.</p>
     </section>
 
     <section>
@@ -60,7 +68,7 @@
     <section>
       <h2>Changes to This Privacy Policy</h2>
       <p>We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Last Updated" date. You are advised to review this Privacy Policy periodically for any changes.</p>
-      <p>If we were ever to make changes that involve collecting Personal Data (which is not our intention), we would seek your explicit consent before such changes take effect and/or provide clear in-app notifications.</p>
+      <p>If we were ever to make changes that involve collecting Personal Data (which is not our intention for core functionality), we would seek your explicit consent before such changes take effect and/or provide clear in-app notifications.</p>
     </section>
 
     <section>
@@ -73,9 +81,12 @@
 
   <footer>
     <p>
-        © <span id="currentYear"></span> Unroutine. All rights reserved. 
-        | <a href="index.html">Back</a>
-        | <a href="https://buymeacoffee.com/julialti" target="_blank" rel="noopener noreferrer" style="font-weight: normal; color: var(--accent-color);">Support with a coffee ☕</a>
+      <a href="index.html">Home</a>  | 
+      <a href="support.html">Support</a>  | 
+      <a href="imprint.html">Legal Notice / Imprint</a>
+      <br>
+      © <span id="currentYear"></span> Unroutine. All rights reserved. 
+      | <a href="https://buymeacoffee.com/julialti" target="_blank" rel="noopener noreferrer" style="font-weight: normal; color: var(--accent-color);">Support with a coffee ☕</a>
     </p>
   </footer>
 
