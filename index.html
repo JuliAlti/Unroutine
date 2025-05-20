@@ -2,63 +2,189 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Unroutine – Support & App Info</title>
-  <meta name="description" content="Support and information for the Unroutine iOS app. Daily challenges to disrupt your routine.">
+  <title>Unroutine – Daily Challenges to Spark Your Day</title>
+  <meta name="description" content="Unroutine delivers a unique, global challenge each day to gently nudge you out of your routine and inspire curiosity. Minimalist, private, and free.">
+  <meta name="keywords" content="unroutine, daily challenge, mindfulness, routine breaker, minimalist app, ios app, self-improvement, creativity">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="assets/favicon.ico" type="image/png"> <!-- Erstelle ein favicon.ico und lege es in /assets ab -->
-  <link rel="apple-touch-icon" href="assets/iconMain.png"> <!-- Für Lesezeichen auf iOS Homescreens -->
+  <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="assets/iconMain.png"> <!-- Standard Apple Touch Icon -->
   <link rel="stylesheet" href="style.css">
+  <style>
+    /* Additional styles specific to the welcome page */
+    body.welcome-page {
+      justify-content: center;
+      padding-top: 0; 
+      padding-bottom: 0;
+    }
+
+    .hero-section {
+      text-align: center;
+      padding: 60px 20px;
+      background-color: var(--background-color);
+      width: 100%;
+    }
+
+    .hero-section img.app-icon-large {
+      width: 100px; 
+      height: 100px;
+      border-radius: 22px; /* iOS Squircle-like for larger icon */
+      margin-bottom: 25px;
+      box-shadow: 0 5px 15px rgba(74, 68, 61, 0.1);
+    }
+
+    .hero-section h1 {
+      font-family: var(--header-font-family);
+      font-size: 3rem;
+      font-weight: normal;
+      color: var(--primary-text-color);
+      margin-bottom: 15px;
+      line-height: 1.2;
+    }
+
+    .hero-section .tagline-main {
+      font-size: 1.3rem;
+      color: var(--secondary-text-color);
+      font-weight: 300;
+      margin-bottom: 30px;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .cta-button { 
+      display: inline-block;
+      background-color: var(--accent-color);
+      color: white !important;
+      padding: 15px 30px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 1.1rem;
+      font-weight: 500;
+      font-family: var(--body-font-family);
+      transition: background-color 0.2s ease-in-out, transform 0.2s ease;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      margin-top: 10px;
+    }
+
+    .cta-button:hover, .cta-button:focus {
+      background-color: var(--accent-hover-color);
+      transform: translateY(-2px);
+      text-decoration: none;
+    }
+    
+    .features-section {
+      padding: 50px 20px;
+      background-color: var(--card-background-color);
+      width: 100%;
+    }
+
+    .features-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .feature-item {
+      flex-basis: 280px;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .feature-item .icon {
+      font-size: 2.5rem; 
+      color: var(--accent-color);
+      margin-bottom: 15px;
+    }
+    
+    .feature-item h3 {
+      font-family: var(--header-font-family);
+      font-size: 1.4rem;
+      font-weight: normal;
+      color: var(--primary-text-color);
+      margin-bottom: 10px;
+    }
+
+    .feature-item p {
+      font-size: 0.95rem;
+      color: var(--secondary-text-color);
+    }
+
+    .main-footer { 
+      background-color: var(--background-color);
+      color: var(--secondary-text-color);
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 0.9em;
+      border-top: 1px solid var(--border-color);
+      width: 100%;
+    }
+
+    .main-footer a {
+      color: var(--secondary-text-color);
+      text-decoration: underline;
+      font-weight: normal; /* Normal weight for footer links */
+    }
+    .main-footer a:hover {
+      color: var(--accent-color);
+    }
+
+    @media (max-width: 768px) {
+      .hero-section h1 {
+        font-size: 2.4rem;
+      }
+      .hero-section .tagline-main {
+        font-size: 1.1rem;
+      }
+      .cta-button {
+        padding: 12px 25px;
+        font-size: 1rem;
+      }
+    }
+  </style>
 </head>
-<body>
+<body class="welcome-page">
 
-  <header class="app-header">
-    <img src="assets/iconMain.png" alt="Unroutine App Icon" class="app-icon">
-    <h1>Unroutine</h1>
-    <p class="tagline">Daily global challenges to gently disrupt your routine.</p>
-  </header>
-
-  <div class="container">
-    <section id="about">
-      <h2>About Unroutine</h2>
-      <p><strong>Unroutine</strong> is a minimalist iOS app designed to bring a spark of novelty to your everyday life. Each day, we release one global "Challenge of the Day" – a simple, often surprising task meant to nudge you out of autopilot.</p>
-      <p>There are no accounts, no tracking, and no pressure. Just a gentle invitation to do something different, observe your surroundings in a new way, or engage in a moment of playful curiosity. The goal is to cultivate awareness and make life a little less predictable.</p>
+  <main>
+    <section class="hero-section">
+      <img src="assets/iconMain_large.png" alt="Unroutine App Icon" class="app-icon-large"> <!-- Annahme: Du hast ein größeres Icon hier -->
+      <h1>Unroutine</h1>
+      <p class="tagline-main">A new daily challenge to gently break your routine and spark a little joy.</p>
+      
+      <a href="YOUR_APP_STORE_LINK_HERE" class="cta-button">Download on the App Store</a>
+      <!-- <p style="margin-top: 15px; font-size: 0.9em; color: var(--secondary-text-color);">(Coming Soon to the App Store)</p> -->
     </section>
 
-    <section id="contact">
-      <h2>Get in Touch</h2>
-      <p>Have questions, feedback, or a brilliant challenge idea? We'd love to hear from you!</p>
-      <p>
-        Please reach out via email:
-        <a href="mailto:unroutine.app@gmail.com">unroutine.app@gmail.com</a>
-      </p>
+    <section class="features-section">
+      <div class="features-grid">
+        <div class="feature-item">
+          <div class="icon">✨</div>
+          <h3>Daily Surprises</h3>
+          <p>Receive a unique, global challenge every day. A fresh spark for your routine.</p>
+        </div>
+        <div class="feature-item">
+          <div class="icon">🧘</div>
+          <h3>Mindful & Minimal</h3>
+          <p>A clean, calm interface designed to inspire, not overwhelm. Focus on your moment.</p>
+        </div>
+        <div class="feature-item">
+          <div class="icon">🛡️</div>
+          <h3>Absolutely Private</h3>
+          <p>No accounts, no tracking. All your activity stays on your device. Period.</p>
+        </div>
+      </div>
     </section>
+  </main>
 
-    <section id="privacy">
-      <h2>Your Privacy Matters</h2>
-      <p>We are committed to your privacy. Unroutine collects absolutely no personal data. All your interactions, like marking a challenge as "done", stay completely on your device.</p>
-      <p>For full details, please read our complete <a href="privacy.html">Privacy Policy</a>.</p>
-    </section>
-
-    <section id="support-us">
-      <h2>Support Unroutine</h2>
-      <p>If you enjoy Unroutine and would like to support its continued development and the creation of new daily challenges, you can treat me to a virtual coffee. Every little bit helps and is greatly appreciated!</p>
-      <p style="text-align: center; margin-top: 20px;">
-        <a href="https://buymeacoffee.com/julialti" target="_blank" rel="noopener noreferrer" class="button-link" style="background-color: #FFDD00; color: #000000 !important; border: 1px solid #E3C000;">
-          ☕ Buy Me a Coffee
-        </a>
-      </p>
-      <p style="text-align: center; font-size: 0.9em; color: var(--secondary-text-color);">
-        (This will take you to my secure "Buy Me a Coffee" page.)
-      </p>
-    </section>
-
-  </div>
-
-  <footer>
+  <footer class="main-footer">
     <p>
-        © <span id="currentYear"></span> Unroutine. All rights reserved.
-        | <a href="https://buymeacoffee.com/julialti" target="_blank" rel="noopener noreferrer" style="font-weight: normal; color: var(--accent-color);">Support with a coffee ☕</a>
+      <a href="support.html">Support</a>  |  
+      <a href="privacy.html">Privacy Policy</a>  | 
+      <a href="imprint.html">Legal Notice / Imprint</a>
     </p>
+    <p>© <span id="currentYear"></span> Unroutine. All rights reserved.</p>
   </footer>
 
   <script>
