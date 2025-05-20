@@ -70,7 +70,7 @@
     <li><code>index.html</code> – App information, contact, and support details.</li>
     <li><code>privacy.html</code> – Our GDPR-compliant privacy policy.</li>
     <li><code>style.css</code> – Minimal, responsive styling for the pages.</li>
-    <li><code>🖼assets/</code> – Folder for images like the app icon.</li>
+    <li><code>assets/</code> – Folder for images like the app icon.</li>
   </ul>
 </div>
 
