@@ -29,7 +29,7 @@ body {
   background-color: var(--background-color);
   color: var(--primary-text-color);
   line-height: 1.75;
-  padding: 20px;
+  padding: 20px; /* This padding applies to support, privacy, imprint pages */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -44,10 +44,10 @@ body {
   margin-top: 30px;
 }
 
-.app-header img.app-icon { /* Styling für das App-Icon im Header der Webseiten */
+.app-header img.app-icon {
   width: 80px;
   height: 80px;
-  border-radius: 18px; /* Oder 22% wenn dein Icon quadratisch ist und du den iOS Squircle-Look möchtest */
+  border-radius: 18px;
   margin-bottom: 20px;
   box-shadow: var(--box-shadow);
 }
@@ -67,7 +67,7 @@ body {
   font-weight: 300;
 }
 
-.container {
+.container { /* Used by support, privacy, imprint */
   max-width: 700px;
   width: 100%;
   margin: 0 auto 40px auto;
@@ -78,7 +78,7 @@ body {
   border: 1px solid var(--border-color);
 }
 
-h1.page-title {
+h1.page-title { /* Used by privacy, imprint */
   font-family: var(--header-font-family);
   font-size: 2rem;
   font-weight: normal;
@@ -87,7 +87,7 @@ h1.page-title {
   text-align: center;
 }
 
-.container .tagline {
+.container .tagline { /* Used by privacy */
   font-size: 1rem;
   color: var(--secondary-text-color);
   text-align: center;
@@ -143,7 +143,7 @@ a:hover, a:focus {
   text-decoration: underline;
 }
 
-.button-link {
+.button-link { /* General button styling, used on support page for BMAC */
   display: inline-block;
   background-color: var(--accent-color);
   color: white !important;
@@ -162,7 +162,7 @@ a:hover, a:focus {
   text-decoration: none;
 }
 
-footer {
+footer { /* Standard footer for support, privacy, imprint */
   margin-top: auto;
   padding: 25px 0;
   width: 100%;
@@ -175,7 +175,7 @@ footer {
 
 /* Responsive adjustments */
 @media (max-width: 600px) {
-  body {
+  body { /* Applies to all pages */
     padding: 15px;
   }
   .app-header h1 {
