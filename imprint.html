@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en"> <!-- Change lang to "de" if primarily for German audience -->
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>Legal Notice / Imprint – Unroutine</title>
@@ -15,7 +15,7 @@
     .container.legal-content h2 {
       font-size: 1.4rem;
     }
-    .container.legal-content address {
+    .container.legal-content address, .container.legal-content .contact-details p { /* Added .contact-details p for consistency */
       font-style: normal;
       line-height: 1.8;
     }
@@ -34,16 +34,16 @@
     <h1 class="page-title">Legal Notice / Imprint</h1>
 
     <section>
-      <h2>Information according to § 5 TMG (German Telemedia Act) / Service Provider</h2>
+      <h2>Information pursuant to § 5 ECG (Austrian E-Commerce Act) and Disclosure pursuant to § 24 MedienG (Austrian Media Act) / Service Provider</h2>
       <address>
         Julian Altinger<br>
         [Your Street and House Number]<br>
         [Your Postal Code] [Your City]<br>
-        Germany
+        Austria 
       </address>
     </section>
 
-    <section>
+    <section class="contact-details"> <!-- Added class for potential specific styling -->
       <h2>Contact Information</h2>
       <p>
         Email: <a href="mailto:unroutine.app@gmail.com">unroutine.app@gmail.com</a><br>
@@ -53,30 +53,57 @@
     </section>
 
     <section>
+        <h2>Object of the Company / Fundamental Direction of the Medium (pursuant to § 24 (3) MedienG)</h2>
+        <p>Information about and promotion of the mobile application "Unroutine"; provision of support information and legal notices related to the app.</p>
+        <!-- Or a more general statement if you plan other activities: -->
+        <!-- <p>Development and provision of mobile applications and related online services.</p> -->
+    </section>
+    
+    <!-- Optional sections for registered business details in Austria - uncomment and fill if applicable -->
+    <!--
+    <section>
+        <h2>Trade / Professional Regulations</h2>
+        <p>Nature of Business: [e.g., Services in automatic data processing and information technology]</p>
+        <p>Member of: [e.g., Austrian Federal Economic Chamber (WKO), UBIT Section [Your State/Region]]</p>
+        <p>Applicable Legislation: e.g., Gewerbeordnung (Trade Regulation Act) accessible at <a href="https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10007517" target="_blank" rel="noopener noreferrer">www.ris.bka.gv.at</a></p>
+        <p>Supervisory/Trade Authority: [e.g., Municipal Authority of the City of [Your City] or District Commission [Your District]]</p>
+    </section>
+    -->
+
+    <!-- VAT ID (UID-Nummer) - include if/when you have one -->
+    <!--
+    <section>
+        <h2>VAT Identification Number (UID-Nummer)</h2>
+        <p>VAT Reg. No. according to § 28 UStG 1994 (Austrian VAT Act): [Your VAT ID]</p>
+        <p>Note on small business regulation (if applicable): Exempt from VAT under § 6 (1) Z 27 UStG (Austrian VAT Act).</p>
+    </section>
+    -->
+
+    <section>
       <h2>Disclaimer</h2>
       <h3>Liability for Content</h3>
-      <p>As a service provider, we are responsible for our own content on these pages according to § 7 para. 1 TMG and general laws. However, according to §§ 8 to 10 TMG, we as service providers are not obligated to monitor transmitted or stored third-party information or to investigate circumstances that indicate illegal activity.</p>
-      <p>Obligations to remove or block the use of information under general laws remain unaffected. However, liability in this regard is only possible from the moment of knowledge of a specific infringement. Upon notification of such violations, we will remove this content immediately.</p>
+      <p>The contents of our pages were created with the utmost care. However, we cannot guarantee the accuracy, completeness, or timeliness of the content. As a service provider, we are responsible for our own content on these pages under general law. However, we are not obligated as a service provider to monitor transmitted or stored third-party information or to investigate circumstances that indicate illegal activity.</p>
+      <p>Obligations to remove or block the use of information under general laws remain unaffected. However, liability in this regard is only possible from the time of knowledge of a specific infringement. Upon notification of such violations, we will remove this content immediately.</p>
 
       <h3>Liability for Links</h3>
       <p>Our site contains links to external websites of third parties over whose content we have no influence. Therefore, we cannot assume any liability for these external contents. The respective provider or operator of the pages is always responsible for the content of the linked pages. The linked pages were checked for possible legal violations at the time of linking. Illegal content was not recognizable at the time of linking.</p>
       <p>A permanent content control of the linked pages is not reasonable without concrete evidence of an infringement. Upon notification of violations, we will remove such links immediately.</p>
 
       <h3>Copyright</h3>
-      <p>The content and works created by the site operators on these pages are subject to German copyright law. Duplication, processing, distribution, or any form of commercialization of such material beyond the scope of the copyright law shall require the prior written consent of its respective author or creator. Downloads and copies of this site are only permitted for private, non-commercial use.</p>
+      <p>The content and works created by the site operators on these pages are subject to Austrian copyright law. Duplication, processing, distribution, or any form of commercialization of such material beyond the scope of copyright law shall require the prior written consent of its respective author or creator. Downloads and copies of this site are only permitted for private, non-commercial use.</p>
       <p>Insofar as the content on this site was not created by the operator, the copyrights of third parties are respected. In particular, third-party content is identified as such. Should you still become aware of a copyright infringement, please inform us accordingly. Upon notification of violations, we will remove such content immediately.</p>
     </section>
 
     <section>
         <h2>EU Dispute Resolution</h2>
         <p>The European Commission provides a platform for online dispute resolution (ODR): <a href="https://ec.europa.eu/consumers/odr/" target="_blank" rel="noopener noreferrer">https://ec.europa.eu/consumers/odr/</a>.<br>
-        Our email address can be found in the contact information above.</p>
+        Our email address can be found in the contact information section above.</p>
         <p>We are not willing or obliged to participate in dispute resolution proceedings before a consumer arbitration board.</p>
     </section>
 
   </div>
 
-  <footer class="main-footer"> <!-- Beibehaltung der Klasse für spezifisches Styling der Welcome-Page, falls nötig -->
+  <footer class="main-footer">
     <p>
       <a href="index.html">Home</a>  |  
       <a href="support.html">Support</a>  |  
