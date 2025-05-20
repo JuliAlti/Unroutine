@@ -81,7 +81,7 @@
 </p>
 <br>
 <p align="center">
-  <a href="mailto:unroutine.app@gmail.com" style="text-decoration: none; color: #0366d6;">✉️ Get in Touch</a>
+  <a href="mailto:support@unroutine.app" style="text-decoration: none; color: #0366d6;">✉️ Get in Touch</a>
   <span style="margin: 0 10px;">|</span>
   <a href="https://buymeacoffee.com/julialti" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: #0366d6;">☕ Buy Me a Coffee</a>
 </p>
