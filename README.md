@@ -14,6 +14,12 @@
   </p>
 </div>
 
+<p align="center">
+  <img src="https://img.shields.io/badge/status-in%20development-yellow.svg" alt="status">
+  <img src="https://img.shields.io/badge/platform-cross--platform-green.svg" alt="platform">
+  <img src="https://img.shields.io/badge/built%20with-java%2017-blue.svg" alt="java">
+</p>
+
 <hr>
 
 <p align="center">
