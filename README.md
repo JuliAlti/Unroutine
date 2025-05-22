@@ -1,6 +1,13 @@
 <div align="center">
   <img src="assets/iconMain.png" alt="Unroutine App Icon" width="120" height="120" style="border-radius: 22%; margin-bottom: 15px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
   <h1>Unroutine – Support & Privacy</h1>
+
+  <p align="center">
+  <img src="https://img.shields.io/badge/status-in%20development-yellow.svg" alt="status">
+  <img src="https://img.shields.io/badge/platform-iOS-blue.svg" alt="platform">
+  <img src="https://img.shields.io/badge/built%20with-SwiftUI%20+%20Firebase-orange.svg" alt="tech">
+</p>
+
   <p>
     <strong>Minimalist Daily Challenges to Spark Your Curiosity</strong>
   </p>
@@ -14,12 +21,9 @@
   </p>
 </div>
 
-<p align="center">
-  <img src="https://img.shields.io/badge/status-in%20development-yellow.svg" alt="status">
-  <img src="https://img.shields.io/badge/platform-iOS-blue.svg" alt="platform">
-  <img src="https://img.shields.io/badge/built%20with-SwiftUI%20+%20Firebase-orange.svg" alt="tech">
-</p>
 
+
+<hr>
 
 <p align="center">
   This repository hosts the static support and privacy information pages for the iOS app <strong>Unroutine</strong>.
