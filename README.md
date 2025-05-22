@@ -16,11 +16,10 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/status-in%20development-yellow.svg" alt="status">
-  <img src="https://img.shields.io/badge/platform-cross--platform-green.svg" alt="platform">
-  <img src="https://img.shields.io/badge/built%20with-java%2017-blue.svg" alt="java">
+  <img src="https://img.shields.io/badge/platform-iOS-blue.svg" alt="platform">
+  <img src="https://img.shields.io/badge/built%20with-SwiftUI%20+%20Firebase-orange.svg" alt="tech">
 </p>
 
-<hr>
 
 <p align="center">
   This repository hosts the static support and privacy information pages for the iOS app <strong>Unroutine</strong>.
