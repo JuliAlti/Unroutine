@@ -21,10 +21,6 @@
   </p>
 </div>
 
-
-
-<hr>
-
 <p align="center">
   This repository hosts the static support and privacy information pages for the iOS app <strong>Unroutine</strong>.
 </p>
